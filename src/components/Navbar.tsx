@@ -38,19 +38,19 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-2 group">
           <div className="relative w-8 h-8 flex items-center justify-center">
             <Egg 
-              className="w-6 h-6 text-indigo-500 transition-transform duration-500 group-hover:rotate-12" 
+              className="w-6 h-6 text-orange-500 transition-transform duration-500 group-hover:rotate-12" 
               strokeWidth={2} 
             />
           </div>
           <span className="text-xl font-display font-semibold tracking-tight">
-            <span className="text-gradient">Nex</span>Egg
+            The Old Farm <span className="text-orange-gradient">Happy Valley</span>
           </span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#products" className="nav-item">Products</a>
-          <a href="#quality" className="nav-item">Our Tech</a>
+          <a href="#quality" className="nav-item">Our Farm</a>
           <a href="#testimonials" className="nav-item">Testimonials</a>
           <a href="#contact" className="nav-item">Contact</a>
         </nav>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </button>
           <a
             href="#shop"
-            className="neo-button shadow-sm"
+            className="orange-neo-button shadow-sm"
           >
             Shop Now
           </a>
@@ -98,7 +98,7 @@ const Navbar = () => {
             className="text-lg font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Our Tech
+            Our Farm
           </a>
           <a 
             href="#testimonials" 
@@ -117,7 +117,7 @@ const Navbar = () => {
           <div className="pt-6 w-full">
             <a
               href="#shop"
-              className="neo-button block w-full text-center"
+              className="orange-neo-button block w-full text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Shop Now

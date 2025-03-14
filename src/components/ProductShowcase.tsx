@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Zap } from 'lucide-react';
+import { ArrowRight, Zap, Egg, Wheat, Barn } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -46,8 +46,19 @@ const products: Product[] = [
 
 const ProductShowcase = () => {
   return (
-    <section id="products" className="py-24 px-6 md:px-10 bg-gradient-to-b from-background to-orange-50/50">
-      <div className="max-w-7xl mx-auto">
+    <section id="products" className="py-24 px-6 md:px-10 bg-gradient-to-b from-background to-orange-50/50 relative overflow-hidden">
+      {/* Farm-themed vector backgrounds */}
+      <div className="absolute top-10 left-5 text-orange-100 opacity-10">
+        <Egg className="w-24 h-24" />
+      </div>
+      <div className="absolute bottom-10 right-5 text-orange-100 opacity-10">
+        <Wheat className="w-32 h-32" />
+      </div>
+      <div className="absolute top-1/2 right-10 text-orange-100 opacity-5">
+        <Barn className="w-48 h-48" />
+      </div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-orange-100 text-orange-600 font-medium text-sm">
             Our Products

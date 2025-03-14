@@ -95,7 +95,7 @@
 
   .nav-item::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-indigo-500 transition-all duration-300 ease-out;
+    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-orange-500 transition-all duration-300 ease-out;
   }
 
   .nav-item:hover::after {
@@ -131,14 +131,14 @@
 
   .neo-button {
     @apply rounded-full px-6 py-3 font-medium shadow-md transition-all duration-300;
-    background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+    background: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
     color: white;
     border: none;
   }
   
   .neo-button:hover {
     @apply transform scale-[1.03];
-    box-shadow: 0 4px 20px rgba(120, 100, 250, 0.4);
+    box-shadow: 0 4px 20px rgba(250, 160, 50, 0.4);
   }
   
   .orange-neo-button {
@@ -150,7 +150,7 @@
   
   .orange-neo-button:hover {
     @apply transform scale-[1.03];
-    box-shadow: 0 4px 20px rgba(250, 150, 50, 0.4);
+    box-shadow: 0 4px 20px rgba(250, 160, 50, 0.4);
   }
 }
 
@@ -164,7 +164,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+    background-image: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
   }
   
   .text-orange-gradient {
@@ -174,3 +174,4 @@
     background-image: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
   }
 }
+

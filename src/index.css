@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,35 +7,35 @@
 
 @layer base {
   :root {
-    --background: 30 33% 99%;
-    --foreground: 24 10% 10%;
+    --background: 230 30% 98%;
+    --foreground: 230 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 24 10% 10%;
+    --card-foreground: 230 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 24 10% 10%;
+    --popover-foreground: 230 25% 15%;
 
-    --primary: 24 75% 50%;
+    --primary: 250 70% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 20% 96%;
-    --secondary-foreground: 24 10% 10%;
+    --secondary: 230 20% 96%;
+    --secondary-foreground: 230 25% 15%;
 
-    --muted: 30 10% 96%;
-    --muted-foreground: 24 5% 45%;
+    --muted: 230 10% 96%;
+    --muted-foreground: 230 15% 45%;
 
-    --accent: 30 20% 96%;
-    --accent-foreground: 24 10% 10%;
+    --accent: 250 20% 96%;
+    --accent-foreground: 230 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 30 10% 90%;
-    --input: 30 10% 90%;
-    --ring: 24 75% 50%;
+    --border: 230 10% 90%;
+    --input: 230 10% 90%;
+    --ring: 250 70% 60%;
 
-    --radius: 0.6rem;
+    --radius: 0.8rem;
   }
 
   * {
@@ -53,7 +53,12 @@
   }
 
   .glass {
-    @apply bg-white/80 backdrop-blur-md border border-white/20;
+    @apply bg-white/70 backdrop-blur-lg border border-white/30 shadow-lg;
+  }
+
+  .neo-glass {
+    @apply bg-white/60 backdrop-blur-xl border border-white/40 shadow-xl;
+    box-shadow: 0 8px 32px rgba(100, 100, 255, 0.1);
   }
 
   .fancy-blur-bg {
@@ -62,13 +67,13 @@
 
   .fancy-blur-bg::before {
     content: '';
-    @apply absolute -z-10 w-full h-full left-0 top-0 opacity-50 bg-gradient-to-r from-cream-100 to-yolk-50 blur-3xl;
+    @apply absolute -z-10 w-full h-full left-0 top-0 opacity-40 bg-gradient-to-r from-indigo-200 to-purple-100 blur-3xl;
     transform: translate(-25%, -25%) rotate(-10deg);
   }
 
   .fancy-blur-bg::after {
     content: '';
-    @apply absolute -z-10 w-full h-full right-0 bottom-0 opacity-50 bg-gradient-to-l from-shell-100 to-cream-50 blur-3xl;
+    @apply absolute -z-10 w-full h-full right-0 bottom-0 opacity-40 bg-gradient-to-l from-violet-200 to-indigo-100 blur-3xl;
     transform: translate(25%, 25%) rotate(-10deg);
   }
 
@@ -90,7 +95,7 @@
 
   .nav-item::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-yolk-500 transition-all duration-300 ease-out;
+    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-indigo-500 transition-all duration-300 ease-out;
   }
 
   .nav-item:hover::after {
@@ -111,11 +116,42 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
+
+  .futuristic-card {
+    @apply rounded-3xl shadow-lg transition-all duration-500 hover:shadow-xl;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 24px rgba(100, 100, 255, 0.15);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 15px rgba(120, 100, 250, 0.5);
+  }
+
+  .neo-button {
+    @apply rounded-full px-6 py-3 font-medium shadow-md transition-all duration-300;
+    background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+    color: white;
+    border: none;
+  }
+  
+  .neo-button:hover {
+    @apply transform scale-[1.03];
+    box-shadow: 0 4px 20px rgba(120, 100, 250, 0.4);
+  }
 }
 
 @layer utilities {
   .mask-radial {
     -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
     mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  }
+  
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
   }
 }

@@ -39,28 +39,28 @@ const Hero = () => {
           className="z-10 animate-fade-in"
           style={{ animationDelay: '0.3s' }}
         >
-          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-cream-100 text-yolk-600 font-medium text-sm">
-            Premium Farm-Fresh Eggs
+          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm">
+            Next-Gen Farm Technology
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance mb-6">
-            Nature's Perfect <br />
-            <span className="text-yolk-500">Nutrition</span> for You
+            The Future of <br />
+            <span className="text-gradient">Nutrition</span> is Here
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-xl text-balance">
-            Discover eggs sourced from happy, free-range hens. Taste the difference in every bite with our nutritious, farm-fresh eggs delivered to your doorstep.
+            Experience eggs from our AI-monitored, ethically-raised happy hens. State-of-the-art farming meets nature's perfect food, delivered to your door.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
             <a 
               href="#shop"
-              className="button-hover flex items-center justify-center px-6 py-3 rounded-full bg-yolk-500 text-white font-medium shadow-md"
+              className="neo-button flex items-center justify-center glow-effect"
             >
               Shop Collection
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
             <a 
               href="#quality"
-              className="button-hover flex items-center justify-center px-6 py-3 rounded-full bg-secondary text-foreground font-medium"
+              className="button-hover flex items-center justify-center px-6 py-3 rounded-full bg-white/80 backdrop-blur-sm text-foreground font-medium border border-white/40"
             >
               Our Quality Promise
             </a>
@@ -72,43 +72,48 @@ const Hero = () => {
           className="relative lg:h-[600px] w-full flex items-center justify-center animate-fade-in"
           style={{ animationDelay: '0.6s' }}
         >
-          {/* Main egg image */}
+          {/* Main image: chicken with egg */}
           <div className="relative z-10 animate-float">
-            <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden premium-card">
+            <div className="w-[320px] h-[320px] md:w-[450px] md:h-[450px] rounded-full overflow-hidden futuristic-card glow-effect">
               <div 
                 className="w-full h-full bg-cover bg-center bg-no-repeat transform scale-110"
                 style={{ 
-                  backgroundImage: `url('https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI3fHxlZ2dzfGVufDB8fHx8MTcxMDI1ODU3M3ww&ixlib=rb-4.0.3&q=80&w=2000')`, 
+                  backgroundImage: `url('https://images.unsplash.com/photo-1569288052389-dac9b01c9c74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')`, 
                   transformOrigin: 'center',
                 }}
               />
             </div>
           </div>
           
-          {/* Background decoration elements */}
-          <div className="absolute top-[15%] right-[15%] w-16 h-16 bg-cream-200 rounded-full opacity-70 animate-pulse-subtle" />
-          <div className="absolute bottom-[20%] left-[5%] w-20 h-20 bg-shell-100 rounded-full opacity-50 animate-pulse-subtle" style={{animationDelay: '1s'}} />
-          <div className="absolute top-[60%] right-[10%] w-12 h-12 bg-yolk-100 rounded-full opacity-60 animate-pulse-subtle" style={{animationDelay: '2s'}} />
+          {/* Background holographic elements */}
+          <div className="absolute top-[10%] right-[15%] w-20 h-20 rounded-full bg-indigo-200/50 blur-md animate-pulse-subtle" />
+          <div className="absolute bottom-[15%] left-[10%] w-24 h-24 rounded-full bg-violet-200/40 blur-md animate-pulse-subtle" style={{animationDelay: '1s'}} />
+          <div className="absolute top-[50%] right-[5%] w-16 h-16 rounded-full bg-purple-100/50 blur-md animate-pulse-subtle" style={{animationDelay: '2s'}} />
+          
+          {/* Digital circuit pattern overlay */}
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')` }} />
+          </div>
         </div>
       </div>
       
-      {/* Stats Bar */}
-      <div className="absolute bottom-0 left-0 right-0 glass border-t border-white/20 py-4 md:py-6">
+      {/* Stats Bar with futuristic design */}
+      <div className="absolute bottom-0 left-0 right-0 neo-glass border-t border-white/20 py-4 md:py-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-6 md:px-10">
           <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-yolk-500">100%</p>
-            <p className="text-sm text-foreground/70">Organic Feed</p>
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">100%</p>
+            <p className="text-sm text-foreground/70">AI-Monitored Farms</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-yolk-500">10K+</p>
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">10K+</p>
             <p className="text-sm text-foreground/70">Happy Customers</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-yolk-500">24h</p>
-            <p className="text-sm text-foreground/70">Fresh Delivery</p>
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">6h</p>
+            <p className="text-sm text-foreground/70">Express Delivery</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-yolk-500">5★</p>
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">5★</p>
             <p className="text-sm text-foreground/70">Customer Rating</p>
           </div>
         </div>

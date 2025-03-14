@@ -30,7 +30,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-background">
       <Navbar />
       <Hero />
       <ProductShowcase />

@@ -40,14 +40,14 @@ const Hero = () => {
           style={{ animationDelay: '0.3s' }}
         >
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm">
-            Next-Gen Farm Technology
+            Est. 1825
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance mb-6">
-            The Future of <br />
-            <span className="text-gradient">Nutrition</span> is Here
+            The Old Farm <br />
+            <span className="text-gradient">Happy Valley</span>
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-xl text-balance">
-            Experience eggs from our AI-monitored, ethically-raised happy hens. State-of-the-art farming meets nature's perfect food, delivered to your door.
+            Family owned and operated, we've transformed our historic estate into a haven for farm animals. Our free-range eggs come from happy hens roaming the beautiful surrounds of Happy Valley.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
@@ -55,7 +55,7 @@ const Hero = () => {
               href="#shop"
               className="neo-button flex items-center justify-center glow-effect"
             >
-              Shop Collection
+              Shop Our Eggs
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
             <a 
@@ -101,20 +101,20 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 right-0 neo-glass border-t border-white/20 py-4 md:py-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-6 md:px-10">
           <div className="text-center">
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">Since</p>
+            <p className="text-sm text-foreground/70">1825</p>
+          </div>
+          <div className="text-center">
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">95km</p>
+            <p className="text-sm text-foreground/70">North of Melbourne</p>
+          </div>
+          <div className="text-center">
             <p className="font-display text-2xl md:text-3xl font-bold text-gradient">100%</p>
-            <p className="text-sm text-foreground/70">AI-Monitored Farms</p>
+            <p className="text-sm text-foreground/70">Organic Feed</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">10K+</p>
-            <p className="text-sm text-foreground/70">Happy Customers</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">6h</p>
-            <p className="text-sm text-foreground/70">Express Delivery</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">5★</p>
-            <p className="text-sm text-foreground/70">Customer Rating</p>
+            <p className="font-display text-2xl md:text-3xl font-bold text-gradient">Family</p>
+            <p className="text-sm text-foreground/70">Owned & Operated</p>
           </div>
         </div>
       </div>

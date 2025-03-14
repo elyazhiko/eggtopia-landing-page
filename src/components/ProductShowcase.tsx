@@ -14,32 +14,32 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "BioTech Free-Range Eggs",
-    description: "Eggs from our AI-monitored hens with optimal nutrition profiles.",
-    price: "$8.99",
+    name: "Free-Range Eggs (6 Pack)",
+    description: "Half-dozen eggs from our free-range, organically fed hens.",
+    price: "$6.50",
     image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI3fHxlZ2dzfGVufDB8fHx8MTcxMDI1ODU3M3ww&ixlib=rb-4.0.3&q=80&w=2000",
     badge: "Best Seller"
   },
   {
     id: 2,
-    name: "Heritage Chicken Eggs",
-    description: "Laid by our specially-bred heritage hens for superior taste.",
-    price: "$9.49",
+    name: "Free-Range Eggs (12 Pack)",
+    description: "Dozen eggs from our happy hens roaming Happy Valley.",
+    price: "$12.00",
     image: "https://images.unsplash.com/photo-1489664237288-b3240e50acad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1934&q=80"
   },
   {
     id: 3,
-    name: "Origin Duck Eggs",
-    description: "Premium duck eggs with enhanced nutritional content.",
-    price: "$12.99",
+    name: "Eggs Tray (30 Count)",
+    description: "Ideal for families or small businesses. Mixed sizes available.",
+    price: "$28.00",
     image: "https://images.unsplash.com/photo-1569288052389-dac9b01c9c74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    badge: "New"
+    badge: "Popular"
   },
   {
     id: 4,
-    name: "Omega-3 Enhanced Eggs",
-    description: "Specially formulated feed for highest omega-3 content.",
-    price: "$10.99",
+    name: "Wholesale Box (180 Eggs)",
+    description: "Bulk order for restaurants and cafes. Fresh delivery available.",
+    price: "$160.00",
     image: "https://images.unsplash.com/photo-1507909676389-96763a8272a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
   }
 ];
@@ -50,13 +50,13 @@ const ProductShowcase = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm">
-            Premium Selection
+            Our Products
           </div>
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Next-Gen <span className="text-gradient">Egg Varieties</span>
+            Farm Fresh <span className="text-gradient">Free-Range Eggs</span>
           </h2>
           <p className="text-foreground/70 text-balance">
-            Discover our range of technologically-enhanced eggs. Each product is monitored from farm to table for perfect quality and nutritional content.
+            Our free-range eggs come in various sizes from 500g to Jumbo. Available in packs of 6, 12, trays of 30, and wholesale boxes of 180 eggs.
           </p>
         </div>
         

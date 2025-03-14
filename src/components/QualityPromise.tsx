@@ -25,14 +25,14 @@ const QualityPromise = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm">
-              Future-Forward
+              Family Tradition
             </div>
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Technology That <br />
-              <span className="text-gradient">Enhances Nature</span>
+              Blending History <br />
+              <span className="text-gradient">With Modern Farming</span>
             </h2>
             <p className="text-lg text-foreground/70 mb-8 text-balance">
-              At NexEgg, we harness cutting-edge technology to monitor, enhance and perfect nature's most nutritious food. Each egg is digitally tracked from our farm to your table.
+              At The Old Farm Happy Valley, Diego and Georgia have intertwined traditional farming practices with modern techniques to ensure the highest quality free-range eggs, delivered fresh to your door.
             </p>
             
             <div className="space-y-6">
@@ -41,8 +41,8 @@ const QualityPromise = () => {
                   <ShieldCheck className="w-3.5 h-3.5 text-indigo-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">AI Quality Monitoring</h4>
-                  <p className="text-sm text-foreground/70">Each egg is scanned and analyzed for perfect quality</p>
+                  <h4 className="font-semibold mb-1">100% Free Range</h4>
+                  <p className="text-sm text-foreground/70">Our chickens roam freely across the beautiful surrounds of Happy Valley</p>
                 </div>
               </div>
               
@@ -51,8 +51,8 @@ const QualityPromise = () => {
                   <ShieldCheck className="w-3.5 h-3.5 text-indigo-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Blockchain Tracking</h4>
-                  <p className="text-sm text-foreground/70">Follow your eggs' journey from farm to door</p>
+                  <h4 className="font-semibold mb-1">Organic Feed</h4>
+                  <p className="text-sm text-foreground/70">Premium organic feed free from soy, GMOs, pesticides, and antibiotics</p>
                 </div>
               </div>
               
@@ -61,8 +61,8 @@ const QualityPromise = () => {
                   <ShieldCheck className="w-3.5 h-3.5 text-indigo-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Climate-Controlled Environment</h4>
-                  <p className="text-sm text-foreground/70">Perfect conditions for happy, healthy hens</p>
+                  <h4 className="font-semibold mb-1">Various Size Options</h4>
+                  <p className="text-sm text-foreground/70">Eggs in sizes from 500g to Jumbo, with mixed trays available</p>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ const QualityPromise = () => {
               <div className="futuristic-card w-full h-full overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1598965898166-9c9b7adae72c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" 
-                  alt="Modern chicken farm with technology" 
+                  alt="Free range chickens at Happy Valley" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -87,23 +87,23 @@ const QualityPromise = () => {
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard 
             icon={<Leaf className="w-6 h-6 text-indigo-600" />}
-            title="Bio-Optimized Feed"
-            description="Scientifically formulated feed enhances egg nutrition and taste while keeping our hens healthy."
+            title="Premium Organic Feed"
+            description="Our chickens enjoy organic barley, sorghum, wheat, chickpeas, and more from Country Heritage Foods."
           />
           <FeatureCard 
             icon={<Cpu className="w-6 h-6 text-indigo-600" />}
-            title="AI Monitoring"
-            description="24/7 monitoring ensures perfect conditions and immediate response to any hen's needs."
+            title="Natural Environment"
+            description="Five different types of grass planted to ensure our chickens live in a natural environment."
           />
           <FeatureCard 
             icon={<BarChart className="w-6 h-6 text-indigo-600" />}
-            title="Data-Driven Quality"
-            description="We analyze thousands of data points to continuously improve our processes and products."
+            title="Wholesale Options"
+            description="Special wholesale boxes of 180 eggs perfect for restaurants, cafes and other businesses."
           />
           <FeatureCard 
             icon={<ShieldCheck className="w-6 h-6 text-indigo-600" />}
-            title="Digital Certification"
-            description="Every batch is digitally certified and traceable to ensure maximum freshness and quality."
+            title="Melbourne Delivery"
+            description="Fresh eggs delivered straight to your door across Melbourne, or available at our retail partners."
           />
         </div>
       </div>

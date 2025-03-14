@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, Egg, Sun, Cloud, Barn, TreeDeciduous, Flower2 } from 'lucide-react';
+import { ArrowRight, Egg, Sun, Cloud, TreeDeciduous, Flower2 } from 'lucide-react';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ const Hero = () => {
         <TreeDeciduous className="w-36 h-36" />
       </div>
       <div className="absolute bottom-40 right-10 text-orange-100 opacity-10">
-        <Barn className="w-40 h-40" />
+        <Cloud className="w-40 h-40" />
       </div>
       <div className="absolute top-1/4 right-1/4 text-orange-100 opacity-5">
         <Sun className="w-64 h-64" />

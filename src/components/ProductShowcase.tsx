@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Zap, Egg, Wheat, Barn } from 'lucide-react';
+import { ArrowRight, Zap, Egg, Wheat, Cloud } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -55,7 +55,7 @@ const ProductShowcase = () => {
         <Wheat className="w-32 h-32" />
       </div>
       <div className="absolute top-1/2 right-10 text-orange-100 opacity-5">
-        <Barn className="w-48 h-48" />
+        <Cloud className="w-48 h-48" />
       </div>
       
       <div className="max-w-7xl mx-auto relative z-10">
